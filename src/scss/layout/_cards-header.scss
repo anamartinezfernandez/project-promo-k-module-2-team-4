@@ -1,3 +1,13 @@
 .header {
-  background-color: red;
+  height: 111px;
+  background-color: $color-white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  margin-left: 40px;
+}
+.header--logo {
+  height: 50px;
+  width: 201px;
 }

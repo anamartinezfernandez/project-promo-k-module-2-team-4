@@ -53,7 +53,7 @@
     justify-content: space-between;
     width: 268px;
     padding: 15px 20px 10px 20px;
-    border: 1.6px solid $color-secondary;
+    border: 1.6px solid $color-secondary-light;
     border-radius: 4px;
     @media all and (min-width: 768px) {
       width: 325px;
@@ -71,10 +71,12 @@
           font-size: 16px;
         }
       }
-      /*  &-image {
-        width: 32px;
-        height: 26px;
-      } */
+      &-image {
+        font-size: 22.4px;
+        @media all and (min-width: 768px) {
+          font-size: 28px;
+        }
+      }
     }
   }
   &__button {

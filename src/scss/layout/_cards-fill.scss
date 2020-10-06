@@ -1,13 +1,15 @@
+.section__fill--collapsable {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 20px 25px 20px;
+}
+
 .element-form {
   display: block;
   font-size: 14px;
   font-family: $font-main;
   margin-left: 20px;
   margin-right: 20px;
-}
-
-.section__fill--title {
-  margin: 10px 0 25px 20px;
 }
 
 .form-input {

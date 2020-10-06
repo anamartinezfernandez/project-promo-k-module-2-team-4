@@ -1,0 +1,19 @@
+.element-form {
+  display: block;
+  font-size: 14px;
+  font-family: $font-main;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.section__fill--title {
+  margin: 10px 0 25px 20px;
+}
+
+.form-input {
+  border: 1px solid $color-primary-light;
+  height: 30px;
+  margin: 7px 0 20px 0;
+  width: 100%;
+  padding: 10px;
+}

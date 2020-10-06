@@ -1,16 +1,33 @@
 <main class="main">
   <section class="secction__card">
-    <button>resset</button>
-    <article>
-      <h2>Nombre Apellido</h2>
-      <h3>Front-end developer</h3>
-      <img src="" />
-      <nav>
-        <ul>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
+    <button class="uppercase button--reset">
+      <i class="fa fa-trash" aria-hidden="true"></i>Reset</button>
+    <article class="section__article">
+      <h2 class="section__article--title">Nombre Apellido</h2>
+      <h3 class="section__article--subtitle">Front-end developer</h3>
+      <img class="section__article--image" src="./assets/images/logo--awesome-profile-cards.svg" />
+      <nav class="section__article--icons">
+        <ul class="icons__list">
+          <li class="icons__list--item">
+            <a class="link" href="">
+              <i class="fa fa-mobile" aria-hidden="true"></i>
+            </a>
+          </li>
+          <li class="icons__list--item">
+            <a class="link" href="">
+              <i class="fa fa-envelope-o" aria-hidden="true"></i>
+            </a>
+          </li>
+          <li class="icons__list--item">
+            <a class="link" href="">
+              <i class="fa fa-linkedin" aria-hidden="true"></i>
+            </a>
+          </li>
+          <li class="icons__list--item">
+            <a class="link" href="">
+              <i class="fa fa-github-alt" aria-hidden="true"></i>
+            </a>
+          </li>
         </ul>
       </nav>
     </article>
@@ -19,9 +36,10 @@
   <section class="section__design">
     <form class="form form--design">
       <fieldset class="fieldset">
-        <legend>Diseña</legend>
+        <legend class="uppercase section__design--title-design"><span class="form--icons"><i class="fa fa-object-ungroup" aria-hidden="true"></i></span>Diseña
+        </legend>
         <div class="form--design-colors">
-          <h4>Colores</h4>
+          <h4 class="uppercase section__design--subtitle">Colores</h4>
           <div class="form--design-palets">
             <div>
               <label for="design-1">
@@ -45,7 +63,8 @@
 
     <form class="form form--fill"></form>
     <fieldset class="fieldset">
-      <legend>Rellena</legend>
+      <legend class="uppercase section__design--title-fill"><span class="form--icons"><i class="fa fa-keyboard-o" aria-hidden="true"></i></span>Rellena
+      </legend>
       <div>
         <label class="element-form" for="name">Nombre completo
           <input class="element-form" id="name" type="text" placeholder="Ej: Sally Hill" name="name" />
@@ -85,6 +104,7 @@
     </fieldset>
     <article class="section__share">
       <section>
+        <h2 class="uppercase section__design--title-share"><span class="form--icons"><i class="fa fa-share-alt" aria-hidden="true"></i></span>Comparte</h2>
         <button>Crear tarjeta</button>
       </section>
       <section>
@@ -93,7 +113,6 @@
         <button>La tarjeta ha sido creada</button>
       </section>
     </article>
-
   </section>
 
 </main>

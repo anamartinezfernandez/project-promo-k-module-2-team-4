@@ -1,96 +1,99 @@
-<section>
-  <button>resset</button>
-  <article>
-    <h2>Nombre Apellido</h2>
-    <h3>Front-end developer</h3>
-    <img src="" />
-    <nav>
-      <ul>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-      </ul>
-    </nav>
-  </article>
-</section>
+<main class="main">
+  <section class="secction__card">
+    <button>resset</button>
+    <article>
+      <h2>Nombre Apellido</h2>
+      <h3>Front-end developer</h3>
+      <img src="" />
+      <nav>
+        <ul>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </nav>
+    </article>
+  </section>
 
-<section>
-  <form class="form form--design">
-    <fieldset>
-      <legend>Diseña</legend>
-      <h4>Colores</h4>
+  <section class="section__design">
+    <form class="form form--design">
+      <fieldset class="fieldset">
+        <legend>Diseña</legend>
+        <div class="form--design-colors">
+          <h4>Colores</h4>
+          <div class="form--design-palets">
+            <div>
+              <label for="design-1">
+                <input id="design-1" type="radio" value="design-1" name="design" />
+              </label>
+
+            </div>
+            <div>
+              <label for="design-2">
+                <input id="design-2" type="radio" value="design-2" name="design" />
+              </label>
+            </div>
+            <div>
+              <label for="design-3">
+                <input id="design-3" type="radio" value="design-3" name="design" />
+              </label>
+            </div>
+          </div>
+      </fieldset>
+    </form>
+
+    <form class="form form--fill"></form>
+    <fieldset class="fieldset">
+      <legend>Rellena</legend>
       <div>
-        <label for="design-1">
-          <input id="design-1" type="radio" value="design-1" name="design" />
+        <label class="element-form" for="name">Nombre completo
+          <input class="element-form" id="name" type="text" placeholder="Ej: Sally Hill" name="name" />
         </label>
       </div>
       <div>
-        <label for="design-2">
-          <input id="design-2" type="radio" value="design-2" name="design" />
+        <label class="element-form" for="position">Puesto
+          <input class="element-form" id="position" type="text" placeholder="Ej: Front-end unicorn" name="position" />
         </label>
       </div>
       <div>
-        <label for="design-3">
-          <input id="design-3" type="radio" value="design-3" name="design" />
+        <label class="element-form" for="image">Imagen de perfil
+          <input class="element-form" id="image" type="file" name="image" />
+        </label>
+      </div>
+      <div>
+        <label class="element-form" for="email">Email
+          <input class="element-form" id="email" type="email" placeholder="Ej: sally-hill@gmail.com" name="email" />
+        </label>
+      </div>
+      <div>
+        <label class="element-form" for="phone">Teléfono
+          <input class="element-form" id="phone" type="tel" placeholder="Ej: 555-55-55-55" name="phone" />
+        </label>
+      </div>
+      <div>
+        <label class="element-form" for="linkedin">Linkedin
+          <input class="element-form" id="linkedin" type="text" placeholder="Ej: linkedin.com/in/sally.hill"
+            name="linkedin" />
+        </label>
+      </div>
+      <div>
+        <label class="element-form" for="github">Github
+          <input class="element-form" id="github" type="text" placeholder="Ej: @sally-hill" name="github" />
         </label>
       </div>
     </fieldset>
-  </form>
+    <article class="section__share">
+      <section>
+        <button>Crear tarjeta</button>
+      </section>
+      <section>
+        <h3>La tarjeta ha sido creada</h3>
+        <a></a>
+        <button>La tarjeta ha sido creada</button>
+      </section>
+    </article>
 
-  <form class="form form--fill"></form>
-  <fieldset>
-    <legend>Rellena</legend>
-    <div>
-      <label for="name"
-        >Nombre completo
-        <input id="name" type="text" placeholder="Ej: Sally Hill" name="name" />
-      </label>
-    </div>
-    <div>
-      <label for="position"
-        >Puesto
-        <input id="position" type="text" placeholder="Ej: Front-end unicorn" name="position" />
-      </label>
-    </div>
-    <div>
-      <label for="image"
-        >Imagen de perfil
-        <input id="image" type="file" name="image" />
-      </label>
-    </div>
-    <div>
-      <label for="email"
-        >Email
-        <input id="email" type="email" placeholder="Ej: sally-hill@gmail.com" name="email" />
-      </label>
-    </div>
-    <div>
-      <label for="phone"
-        >Teléfono
-        <input id="phone" type="tel" placeholder="Ej: 555-55-55-55" name="phone" />
-      </label>
-    </div>
-    <div>
-      <label for="linkedin"
-        >Linkedin
-        <input id="linkedin" type="text" placeholder="Ej: linkedin.com/in/sally.hill" name="linkedin" />
-      </label>
-    </div>
-    <div>
-      <label for="github"
-        >Github
-        <input id="github" type="text" placeholder="Ej: @sally-hill" name="github" />
-      </label>
-    </div>
-  </fieldset>
+  </section>
 
-  <article>
-    <button>Crear tarjeta</button>
-  </article>
-  <article>
-    <h3>La tarjeta ha sido creada</h3>
-    <a></a>
-    <button>La tarjeta ha sido creada</button>
-  </article>
-</section>
+</main>

@@ -33,12 +33,16 @@
     <label class="element-form" for="image"
       >Imagen de perfil
       <input
-        class="element-form form-input"
+        class="element-form form-input form-file js__profile-upload-btn"
         id="image"
         type="file"
         name="image"
       />
     </label>
+    <div class="button--wrapper">
+      <button class="button--file js__profile-trigger">Añadir imagen</button>
+      <div class="js__profile-preview"></div>
+  </div>
   </div>
   <div>
     <label class="element-form" for="email"

@@ -2,6 +2,10 @@
   display: flex;
   justify-content: space-between;
   margin: 10px 20px 25px 20px;
+  @media all and (min-width: 768px) {
+    margin-right: 0;
+    margin-left: 40px;
+  }
 }
 
 .element-form {
@@ -10,6 +14,10 @@
   font-family: $font-main;
   margin-left: 20px;
   margin-right: 20px;
+  @media all and (min-width: 768px) {
+    margin-right: 0;
+    margin-left: 40px;
+  }
 }
 
 .form-input {
@@ -41,6 +49,9 @@
   align-items: center;
   justify-content: center;
   margin-right: 20px;
+  @media all and (min-width: 768px) {
+    margin-left: 20px;
+  }
 }
 
 .js__profile-preview {

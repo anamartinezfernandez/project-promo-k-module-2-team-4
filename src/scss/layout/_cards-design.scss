@@ -9,7 +9,7 @@
   }
   @media all and (min-width: 768px) {
     background-color: none;
-    width: 50%;
+    width: 400px;
   }
 }
 
@@ -25,6 +25,10 @@
   flex-direction: row;
   justify-content: space-between;
   margin: 30px 20px 22px 20px;
+  @media all and (min-width: 768px) {
+    margin-right: 0;
+    margin-left: 40px;
+  }
 }
 
 .form--design-colors {
@@ -39,6 +43,9 @@
   grid-template-rows: 25px 25px 25px;
   grid-row-gap: 10px;
   margin-right: 20px;
+  @media all and (min-width: 768px) {
+    margin-right: 0;
+  }
 }
 
 .palets {

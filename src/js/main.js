@@ -61,9 +61,18 @@ const designCollapsable = document.querySelector(".js-designCollapsable");
 const fillCollapsable = document.querySelector(".js-fillCollapsable");
 const shareCollapsable = document.querySelector(".js-shareCollapsable");
 
-
-function hideFill() {
-  fillContainer.classList.add("hidden");
+function hideDesign() {
+  designContainer.classList.toggle("hidden");
   console.log("hola");
 }
+designCollapsable.addEventListener("click", hideDesign);
+
+function hideFill() {
+  fillContainer.classList.toggle("hidden");
+}
 fillCollapsable.addEventListener("click", hideFill);
+
+function hideShare() {
+  shareContainer.classList.toggle("hidden");
+}
+shareCollapsable.addEventListener("click", hideShare);

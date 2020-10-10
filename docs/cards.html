@@ -52,7 +52,44 @@
         </section>
 
         <form class="form" action="/signup" method="POST">
-            <fieldset class="fieldset form--design">
+            <fieldset class="fieldset form-design">
+              <div class="section__design--collapsable uppercase">
+                <h3 class="section__design--title bold"><i class="fa fa-object-ungroup form--icons" aria-hidden="true"></i>Diseña</h3>
+                <a class="button--collapsable js-designCollapsable"><i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+              </div>
+              <div class="form--design-colors js-designContainer">
+                <h4 class="uppercase section__design--subtitle">Colores</h4>
+                <div class="form--design-palets">
+                  <div class="palets--radio-1">
+                    <label for="design-1">
+                      <input id="design-1" type="radio" value="design-1" name="design"/>
+                    </label>
+                  </div>
+                  <div class="palets--radio-2">
+                    <label for="design-2">
+                      <input id="design-2" type="radio" value="design-1" name="design"/>
+                    </label>
+                  </div>
+                  <div class="palets--radio-3">
+                    <label for="design-3">
+                      <input id="design-3" type="radio" value="design-3" name="design"/>
+                    </label>
+                  </div>
+                  <div class="palets palets--color-1"></div>
+                  <div class="palets palets--color-2"></div>
+                  <div class="palets palets--color-3"></div>
+                  <div class="palets palets--color-4"></div>
+                  <div class="palets palets--color-5"></div>
+                  <div class="palets palets--color-6"></div>
+                  <div class="palets palets--color-7"></div>
+                  <div class="palets palets--color-8"></div>
+                  <div class="palets palets--color-9"></div>
+                </div>
+              </div>
+            </fieldset>
+
+
+            <!-- <fieldset class="fieldset form--design">
               <div class="section__design--collapsable uppercase">
                 <h3 class="section__design--title bold"><i class="fa fa-object-ungroup form--icons" aria-hidden="true"></i>Diseña
                 </h3>
@@ -89,7 +126,7 @@
                       <div class="palets palets--color-9"></div>
                   </div>
               </div>
-            </fieldset>
+            </fieldset> -->
 
             <fieldset class="fieldset form--fill">
               <div class="section__fill--collapsable uppercase">
@@ -118,7 +155,7 @@
                   </label>
                   <div class="button--wrapper">
                     <button class="button--file js__profile-trigger">Añadir imagen</button>
-                    <div class="js__profile-preview"></div>
+                    <div class="js__profile-preview image--profile-preview"></div>
                   </div>
                 </div>
                 <div>

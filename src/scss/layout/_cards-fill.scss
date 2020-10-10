@@ -1,7 +1,7 @@
 .section__fill--collapsable {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 25px; 
+  margin-bottom: 25px;
 }
 .element-form {
   display: block;
@@ -9,9 +9,10 @@
   font-family: $font-main;
 }
 
-.input-github{
+.input-github {
   margin-bottom: 30px;
 }
+
 .form-input {
   border: 1px solid $color-primary-light;
   height: 30px;
@@ -34,19 +35,15 @@
   height: 30px;
   background-color: $color-secondary;
   color: $color-white;
-  // padding: 10px;
   border: 1px solid $color-secondary;
   border-radius: 3px;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-right: 20px;
-  @media all and (min-width: 768px) {
-    // margin-left: 20px;
-  }
 }
 
-.js__profile-preview {
+.image--profile-preview {
   height: 30px;
   width: 30px;
   border: 1px solid $color-primary-light;

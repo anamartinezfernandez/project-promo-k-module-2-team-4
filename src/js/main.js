@@ -63,7 +63,6 @@ const shareCollapsable = document.querySelector(".js-shareCollapsable");
 
 function hideDesign() {
   designContainer.classList.toggle("hidden");
-  console.log("hola");
 }
 designCollapsable.addEventListener("click", hideDesign);
 

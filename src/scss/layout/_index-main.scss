@@ -14,11 +14,11 @@
 
   &__logo {
     &--img {
-      width: 250px;
+      width: 162px;
       height: 63px;
 
       @media all and (min-width: 768px) {
-        width: 419px;
+        width: 250px;
         height: 105px;
       }
     }

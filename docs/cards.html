@@ -11,7 +11,7 @@
 
   <body>
     <header class="header">
-      <img class="header--logo" src="./assets/images/logo--awesome-profile-cards.svg" />
+      <img class="header--logo" src="./assets/images/simpsonswhite.jpg" />
     </header>
     <main class="main__cards">
         <section class="section__card">
@@ -22,7 +22,7 @@
                 <h2 class="section__article--title js-cardName">Nombre Apellido</h2>
                 <h3 class="section__article--subtitle js-cardPosition">Front-end developer</h3>
               </div>
-              <div class="section__article--image js__profile-image" style="background-image: url(https://via.placeholder.com/300x300/cccccc/666666/?text=IMAGE)"></div>
+              <div class="section__article--image js__profile-image" style="background-image: url(./assets/images/lisa_simpson.png)"></div>
               <nav class="section__article--icons">
                 <ul class="icons__list">
                   <li class="icons__list--item">
@@ -57,7 +57,7 @@
                 <h3 class="section__design--title bold"><i class="fa fa-object-ungroup form--icons" aria-hidden="true"></i>Diseña</h3>
                 <a class="button--collapsable js-designCollapsable"><i class="fa fa-chevron-down" aria-hidden="true"></i></a>
               </div>
-              <div class="form--design-colors js-designContainer">
+              <div class="form--design-colors js-designContainer hidden">
                 <h4 class="uppercase section__design--subtitle">Colores</h4>
                 <div class="form--design-palets">
                   <div class="palets--radio-1">
@@ -95,17 +95,17 @@
                   <i class="fa fa-chevron-down" aria-hidden="true"></i>
                 </a>
               </div>
-              <div class="js-fillContainer">
+              <div class="js-fillContainer aria-hidden hidden">
                 <div>
                   <label class="element-form" for="name"
                     >Nombre completo
-                    <input class="element-form form-input js-inputName" id="name" type="text" placeholder="Ej: Sally Hill" name="name" />
+                    <input class="element-form form-input js-inputName" id="name" type="text" placeholder="Ej: Lisa Simpson" name="name" />
                   </label>
                 </div>
                 <div>
                   <label class="element-form" for="position"
                     >Puesto
-                    <input class="element-form form-input js-inputPosition" id="position" type="text" placeholder="Ej: Front-end unicorn" name="position" />
+                    <input class="element-form form-input js-inputPosition" id="position" type="text" placeholder="Ej: Saxophonist " name="position" />
                   </label>
                 </div>
                 <div>
@@ -121,7 +121,7 @@
                 <div>
                   <label class="element-form" for="email"
                     >Email
-                    <input class="element-form form-input js-inputEmail" id="email" type="email" placeholder="Ej: sally-hill@gmail.com" name="email" />
+                    <input class="element-form form-input js-inputEmail" id="email" type="email" placeholder="Ej: lisa-simpson@gmail.com" name="email" />
                   </label>
                 </div>
                 <div>
@@ -133,13 +133,13 @@
                 <div>
                   <label class="element-form" for="linkedin"
                     >Linkedin
-                    <input class="element-form form-input js-inputLinkedin" id="linkedin" type="text" placeholder="Ej: linkedin.com/in/sally.hill" name="linkedin" />
+                    <input class="element-form form-input js-inputLinkedin" id="linkedin" type="text" placeholder="Ej: linkedin.com/in/lisa.simpson" name="linkedin" />
                   </label>
                 </div>
                 <div>
                   <label class="element-form" for="github"
                     >Github
-                    <input class="input-github element-form form-input js-inputGithub" id="github" type="text" placeholder="Ej: github.com/sally-hill" name="github" />
+                    <input class="input-github element-form form-input js-inputGithub" id="github" type="text" placeholder="Ej: github.com/lisa-simpson" name="github" />
                   </label>
                 </div>
               </div>
@@ -154,8 +154,8 @@
               </div>
             </fieldset>
 
-            <fieldset class="fieldset">
-              <section class="section__link js-shareContainer">
+            <fieldset class="fieldset hiddenshare js-hiddenshare">
+              <section class="section__link js-shareContainer hidden">
                 <button type="submit" class="button--create uppercase"><i class="fa fa-id-card" aria-hidden="true"></i>Crear tarjeta</button>
                 <h3 class="section__share--subtitle">La tarjeta ha sido creada</h3>
                 <a class="link link--share" href="https://www.enlacedeprueba.com">https://www.enlacedeprueba.com</a>
@@ -166,7 +166,7 @@
         </form>
     </main>
     <footer class="footer">
-      <small class="footer__small"> Awesome profile-cards @2018 </small>
+      <small class="footer__small"> Montgomery cards @2020</small>
       <a href="http://www.adalab.es" target="_blank" title="Ir a Adalab">
         <img
           class="footer__logo"

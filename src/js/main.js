@@ -18,7 +18,7 @@ const cardGithub = document.querySelector(".js-cardGithub");
 function changeName() {
   cardName.innerHTML = inputName.value;
   if (inputName.value === "") {
-    cardName.innerHTML = "Nombre Apellido";
+    cardName.innerHTML = "Lisa Simpson";
   }
 }
 inputName.addEventListener("keyup", changeName);
@@ -26,7 +26,7 @@ inputName.addEventListener("keyup", changeName);
 function changePosition() {
   cardPosition.innerHTML = inputPosition.value;
   if (inputPosition.value === "") {
-    cardPosition.innerHTML = "Front-end developer";
+    cardPosition.innerHTML = "Saxophonist";
   }
 }
 inputPosition.addEventListener("keyup", changePosition);

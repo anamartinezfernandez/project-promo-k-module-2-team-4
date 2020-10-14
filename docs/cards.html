@@ -11,7 +11,9 @@
 
   <body>
     <header class="header">
-      <img class="header--logo" src="./assets/images/simpsonswhite.jpg" />
+      <a href= "./index.html">
+        <img class="header--logo" src="./assets/images/white_design.png" />
+      </a>
     </header>
     <main class="main__cards">
         <section class="section__card">
@@ -22,7 +24,7 @@
                 <h2 class="section__article--title js-cardName">Lisa Simpson</h2>
                 <h3 class="section__article--subtitle js-cardPosition">Saxophonist</h3>
               </div>
-              <div class="section__article--image js__profile-image" style="background-image: url(./assets/images/lisa_simpson.png)"></div>
+              <div class="section__article--image js__profile-image"></div>
               <nav class="section__article--icons">
                 <ul class="icons__list">
                   <li class="icons__list--item">
@@ -51,7 +53,7 @@
           </div>
         </section>
 
-        <form class="form" action="/signup" method="POST">
+        <form class="form">
             <fieldset class="fieldset form-design">
               <div class="section__design--collapsable uppercase">
                 <h3 class="section__design--title bold"><i class="fa fa-object-ungroup form--icons" aria-hidden="true"></i>Diseña</h3>
@@ -114,7 +116,7 @@
                     <input class="element-form form-input form-file js__profile-upload-btn" id="image" type="file" name="image" />
                   </label>
                   <div class="button--wrapper">
-                    <button class="button--file js__profile-trigger">Añadir imagen</button>
+                    <button type="button" class="button--file js__profile-trigger">Añadir imagen</button>
                     <div class="js__profile-preview image--profile-preview"></div>
                   </div>
                 </div>
@@ -156,7 +158,7 @@
 
             <fieldset class="fieldset hiddenshare js-hiddenshare">
               <section class="section__link js-shareContainer hidden">
-                <button type="submit" class="button--create uppercase"><i class="fa fa-id-card" aria-hidden="true"></i>Crear tarjeta</button>
+                <button type="button" class="button--create uppercase"><i class="fa fa-id-card" aria-hidden="true"></i>Crear tarjeta</button>
                 <h3 class="section__share--subtitle">La tarjeta ha sido creada</h3>
                 <a class="link link--share" href="https://www.enlacedeprueba.com">https://www.enlacedeprueba.com</a>
                 <button class="button--share"><i class="fa fa-twitter" aria-hidden="true"></i>Compartir en twitter</button>

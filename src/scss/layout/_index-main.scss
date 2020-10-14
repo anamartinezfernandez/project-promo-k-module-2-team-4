@@ -14,12 +14,13 @@
 
   &__logo {
     &--img {
-      width: 162px;
-      height: 63px;
+      width: 224px;
+      height: 83px;
 
       @media all and (min-width: 768px) {
-        width: 250px;
-        height: 105px;
+        width: 406px;
+        height: 148px;
+        margin-bottom: 30px;
       }
     }
   }

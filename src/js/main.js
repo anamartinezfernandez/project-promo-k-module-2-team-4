@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 
 //FORMULARIO
 const inputName = document.querySelector(".js-inputName");
@@ -32,25 +32,24 @@ function changePosition() {
 inputPosition.addEventListener("keyup", changePosition);
 
 function changeEmail() {
-  cardEmail.setAttribute("href", (cardEmail.href + inputEmail.value));
+  cardEmail.setAttribute("href", cardEmail.href + inputEmail.value);
 }
-inputEmail.addEventListener("keyup", changeEmail);
+inputEmail.addEventListener("blur", changeEmail);
 
 function changePhone() {
-  cardPhone.setAttribute("href", (cardPhone.href + inputPhone.value));
+  cardPhone.setAttribute("href", cardPhone.href + inputPhone.value);
 }
-inputPhone.addEventListener("keyup", changePhone);
+inputPhone.addEventListener("blur", changePhone);
 
 function changeLinkedin() {
-  cardLinkedin.setAttribute("href", (cardLinkedin.href + inputLinkedin.value));
+  cardLinkedin.setAttribute("href", cardLinkedin.href + inputLinkedin.value);
 }
-inputLinkedin.addEventListener("keyup", changeLinkedin);
+inputLinkedin.addEventListener("blur", changeLinkedin);
 
 function changeGithub() {
-  cardGithub.setAttribute("href", (cardGithub.href + inputGithub.value));
+  cardGithub.setAttribute("href", cardGithub.href + inputGithub.value);
 }
-inputGithub.addEventListener("keyup", changeGithub);
-
+inputGithub.addEventListener("blur", changeGithub);
 
 //COLAPSABLES
 const designContainer = document.querySelector(".js-designContainer");
@@ -61,7 +60,7 @@ const designCollapsable = document.querySelector(".js-designCollapsable");
 const fillCollapsable = document.querySelector(".js-fillCollapsable");
 const shareCollapsable = document.querySelector(".js-shareCollapsable");
 
-const hiddenshare = document.querySelector ('.js-hiddenshare');
+const hiddenshare = document.querySelector(".js-hiddenshare");
 
 function hideDesign() {
   designContainer.classList.toggle("hidden");
@@ -77,8 +76,7 @@ fillCollapsable.addEventListener("click", hideFill);
 
 function hideShare() {
   shareContainer.classList.toggle("hidden");
-  hiddenshare.classList.toggle ('hiddenshare');
+  hiddenshare.classList.toggle("hiddenshare");
   shareCollapsable.classList.toggle("rotate");
 }
 shareCollapsable.addEventListener("click", hideShare);
-

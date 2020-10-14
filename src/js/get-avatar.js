@@ -6,6 +6,8 @@ const fileField = document.querySelector(".js__profile-upload-btn");
 const profileImage = document.querySelector(".js__profile-image");
 const profilePreview = document.querySelector(".js__profile-preview");
 
+// debugger;
+
 /**
  * Recoge el archivo añadido al campo de tipo "file"
  * y lo carga en nuestro objeto FileReader para que
@@ -18,6 +20,7 @@ function getImage(e) {
   const myFile = e.currentTarget.files[0];
   fr.addEventListener("load", writeImage);
   fr.readAsDataURL(myFile);
+  console.log(myFile);
 }
 
 /**
@@ -40,6 +43,7 @@ function writeImage() {
  */
 function fakeFileClick() {
   fileField.click();
+  console.log("hola");
 }
 
 /**

@@ -62,6 +62,12 @@
 .section__article--wrapper {
   border-left: 5px solid $color-primary-dark;
 }
+.section__article--wrapper2 {
+  border-left: 5px solid #420101;
+}
+.section__article--wrapper3 {
+  border-left: 5px solid #3e5b65;
+}
 
 .icons__list {
   list-style: none;
@@ -86,4 +92,13 @@
   background-repeat: no-repeat;
   background-size: cover;
   border: 1px solid #ccc;
+}
+.item_color1 {
+  border: #a2deaf;
+}
+.item_color2 {
+  border: #e95626;
+}
+.item_color3 {
+  border: #a0c0cf;
 }

@@ -15,6 +15,7 @@ const cardPhone = document.querySelector(".js-cardPhone");
 const cardLinkedin = document.querySelector(".js-cardLinkedin");
 const cardGithub = document.querySelector(".js-cardGithub");
 
+
 function changeName() {
   cardName.innerHTML = inputName.value;
   if (inputName.value === "") {
@@ -62,6 +63,7 @@ const shareCollapsable = document.querySelector(".js-shareCollapsable");
 
 const hiddenshare = document.querySelector(".js-hiddenshare");
 
+
 function hideDesign() {
   designContainer.classList.toggle("hidden");
   designCollapsable.classList.toggle("rotate");
@@ -80,3 +82,71 @@ function hideShare() {
   shareCollapsable.classList.toggle("rotate");
 }
 shareCollapsable.addEventListener("click", hideShare);
+
+// PALETAS
+const design1 = document.querySelector(".js-design-1");
+const design2 = document.querySelector(".js-design-2");
+const design3 = document.querySelector(".js-design-3");
+
+const wrapper = document.querySelector(".section__article--wrapper");
+const circle = document.querySelectorAll(".icons__list--item");
+
+
+function changeDesign(event) {
+  console.log(event.currentTarget.value);
+ if (event.currentTarget.value === "design-1")  {
+  wrapper.classList.add ("section__article--wrapper");
+  wrapper.classList.remove ("section__article--wrapper2");
+  wrapper.classList.remove ("section__article--wrapper3");
+  cardName.classList.add ("color1");
+  cardName.classList.remove ("color4");
+  cardName.classList.remove ("color7");
+  cardPosition.classList.add ("color2");
+  cardPosition.classList.remove ("color5");
+  cardPosition.classList.remove ("color8");
+  for (const eachitem of circle) {
+    eachitem.classList.add ("color3");
+    eachitem.classList.remove ("color6");
+    eachitem.classList.remove ("color9");
+    }
+  }
+  
+ 
+ if (event.currentTarget.value === "design-2") {
+  wrapper.classList.add ("section__article--wrapper2");
+  wrapper.classList.remove ("section__article--wrapper");
+  wrapper.classList.remove ("section__article--wrapper3");
+  cardName.classList.add ("color4");
+  cardName.classList.remove ("color1");
+  cardName.classList.remove ("color7");
+  cardPosition.classList.add ("color5");
+  cardPosition.classList.remove ("color2");
+  cardPosition.classList.remove ("color8");
+  for (const eachitem of circle) {
+    eachitem.classList.add ("color6");
+    eachitem.classList.remove ("color3");
+    eachitem.classList.remove ("color9");
+  }
+ }
+ if (event.currentTarget.value === "design-3") {
+  wrapper.classList.add ("section__article--wrapper3");
+  wrapper.classList.remove ("section__article--wrapper");
+  wrapper.classList.remove ("section__article--wrapper2");
+  cardName.classList.add ("color7");
+  cardName.classList.remove ("color4");
+  cardName.classList.remove ("color1");
+  cardPosition.classList.add ("color8");
+  cardPosition.classList.remove ("color5");
+  cardPosition.classList.remove ("color2");
+  for (const eachitem of circle) {
+    eachitem.classList.add ("color9");
+    eachitem.classList.remove ("color3");
+    eachitem.classList.remove ("color6");
+  }
+ }
+}
+
+
+design1.addEventListener("click", changeDesign);
+design2.addEventListener("click", changeDesign);
+design3.addEventListener("click", changeDesign);

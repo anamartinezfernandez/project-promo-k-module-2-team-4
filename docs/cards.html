@@ -18,7 +18,9 @@
     <main class="main__cards">
         <section class="section__card">
           <div class="section__card--wrapper">
-            <button class="uppercase button--reset"><i class="fa fa-trash" aria-hidden="true"></i>Reset</button>
+            <button class="uppercase button--reset">
+              <i class="fa fa-trash" aria-hidden="true"></i>Reset
+            </button>
             <article class="section__article">
               <div class="section__article--wrapper">
                 <h2 class="section__article--title js-cardName">Lisa Simpson</h2>
@@ -27,22 +29,22 @@
               <div class="section__article--image js__profile-image"></div>
               <nav class="section__article--icons">
                 <ul class="icons__list">
-                  <li class="icons__list--item">
+                  <li class="icons__list--item js-item">
                     <a class="link js-cardPhone" href="tel:">
                       <i class="fa fa-mobile" aria-hidden="true"></i>
                     </a>
                   </li>
-                  <li class="icons__list--item">
+                  <li class="icons__list--item js-item1">
                     <a class="link js-cardEmail" href="mailto:">
                       <i class="fa fa-envelope-o" aria-hidden="true"></i>
                     </a>
                   </li>
-                  <li class="icons__list--item">
+                  <li class="icons__list--item js-item2">
                     <a class="link js-cardLinkedin" href="https://" target="_blank">
                       <i class="fa fa-linkedin" aria-hidden="true"></i>
                     </a>
                   </li>
-                  <li class="icons__list--item">
+                  <li class="icons__list--item js-item3">
                     <a class="link js-cardGithub" href="https://" target="_blank">
                       <i class="fa fa-github-alt" aria-hidden="true"></i>
                     </a>
@@ -56,25 +58,36 @@
         <form class="form">
             <fieldset class="fieldset form-design">
               <div class="section__design--collapsable uppercase">
-                <h3 class="section__design--title bold"><i class="fa fa-object-ungroup form--icons" aria-hidden="true"></i>Diseña</h3>
-                <a class="button--collapsable js-designCollapsable"><i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+                <h3 class="section__design--title bold">
+                  <i class="fa fa-object-ungroup form--icons" aria-hidden="true"></i>Diseña
+                </h3>
+                <a class="button--collapsable js-designCollapsable"
+                  ><i class="fa fa-chevron-down" aria-hidden="true"></i
+                ></a>
               </div>
               <div class="form--design-colors js-designContainer hidden">
                 <h4 class="uppercase section__design--subtitle">Colores</h4>
                 <div class="form--design-palets">
                   <div class="palets--radio-1">
                     <label for="design-1">
-                      <input id="design-1" type="radio" value="design-1" name="design"/>
+                      <input
+                        class="js-design-1"
+                        id="design-1"
+                        type="radio"
+                        value="design-1"
+                        name="design"
+                        checked
+                      />
                     </label>
                   </div>
                   <div class="palets--radio-2">
                     <label for="design-2">
-                      <input id="design-2" type="radio" value="design-1" name="design"/>
+                      <input class="js-design-2" id="design-2" type="radio" value="design-2" name="design" />
                     </label>
                   </div>
                   <div class="palets--radio-3">
                     <label for="design-3">
-                      <input id="design-3" type="radio" value="design-3" name="design"/>
+                      <input class="js-design-3" id="design-3" type="radio" value="design-3" name="design" />
                     </label>
                   </div>
                   <div class="palets palets--color-1"></div>

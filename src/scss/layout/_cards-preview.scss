@@ -65,8 +65,11 @@
     width: 100%;
     background-image: url("../images/lisa_simpson.png");
   }
-}
 
+  &--wrapper {
+    border-left: 5px solid $color-primary;
+  }
+}
 
 .icons__list {
   list-style: none;

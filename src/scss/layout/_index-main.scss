@@ -103,6 +103,10 @@
     border-radius: 21px;
     padding: 10px 20px;
     background-color: $color-primary;
+    &:hover {
+      background-color: $color-secondary;
+      border: solid $color-secondary;
+    }
 
     @media all and (min-width: 768px) {
       margin-top: 186px;

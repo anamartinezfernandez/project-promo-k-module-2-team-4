@@ -1,4 +1,3 @@
-
 const inputName = document.querySelector('.js-inputName');
 const inputPosition = document.querySelector('.js-inputPosition');
 const inputEmail = document.querySelector('.js-inputEmail');
@@ -48,3 +47,15 @@ function changeGithub() {
   cardGithub.setAttribute('href', cardGithub.href + inputGithub.value);
 }
 inputGithub.addEventListener('blur', changeGithub);
+
+const buttonShare = document.querySelector('.js-button--create');
+const twitterContainer = document.querySelector('.js-twitterContainer');
+const shareTwitter = document.querySelector('.js-section__link--share');
+
+function hideTwitter() {
+  twitterContainer.classList.remove('hidden');
+  shareTwitter.classList.remove('hidden--border');
+  buttonShare.classList.add('change-button');
+}
+
+buttonShare.addEventListener('click', hideTwitter);

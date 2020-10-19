@@ -21,7 +21,7 @@
 
 .fieldset {
   border: none;
-  border-bottom: solid 1px #d8d8d8; //$color-border
+  border-bottom: solid 1px $color-border;
   margin: 10px 0 10px 0;
 }
 
@@ -37,4 +37,8 @@
 
 .button--collapsable {
   cursor: pointer;
+}
+
+.margins {
+  margin-top: 25px !important;
 }

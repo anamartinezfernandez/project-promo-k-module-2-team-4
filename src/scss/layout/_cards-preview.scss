@@ -28,6 +28,10 @@
   color: $color-cuaternary;
   font-size: 12px;
   cursor: pointer;
+  &:hover {
+    background-color: $color-white;
+    border: 1px solid $color-cuaternary;
+  }
 }
 
 .fa-trash,
@@ -63,7 +67,7 @@
     background-size: cover;
     border: 1px solid #ccc;
     width: 100%;
-    background-image: url("../images/lisa_simpson.png");
+    background-image: url('../images/lisa_simpson.png');
   }
 
   &--wrapper {

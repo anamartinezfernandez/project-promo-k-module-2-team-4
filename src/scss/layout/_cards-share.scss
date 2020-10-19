@@ -12,7 +12,7 @@
 .section__share--collapsable {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 
 .button--create {
@@ -26,11 +26,24 @@
   cursor: pointer;
   margin-bottom: 30px;
   box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.32);
+  &:hover {
+    background-color: #feae62;
+    border: 0.5px solid #feae62;
+  }
+}
+
+.change-button {
+  background-color: #d5d5d5;
+  border: 0.5px solid #d5d5d5;
 }
 
 .section__link {
   text-align: center;
   margin: 10px 0 20px 0;
+  &--share {
+    border-bottom: solid 1px #d8d8d8;
+    margin-bottom: 20px;
+  }
 }
 
 .link--share {
@@ -50,4 +63,8 @@
   border: 1px solid #00a0f5;
   box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.32);
   cursor: pointer;
+}
+
+.hidden--border {
+  border-bottom: none !important;
 }

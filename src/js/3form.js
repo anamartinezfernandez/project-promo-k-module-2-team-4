@@ -15,6 +15,7 @@ const data = {
 
 const saveField = function (event) {
   data[event.currentTarget.name] = event.currentTarget.value;
+  console.log(data);
   render();
 };
 

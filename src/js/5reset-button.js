@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 
 const buttonReset = document.querySelector('.js-button--reset');
 const profileImageCard = document.querySelector('.js__profile-image');
@@ -7,24 +7,23 @@ const smallImage = document.querySelector('.js__profile-preview');
 const urlSmall = ' ';
 
 function reset() {
-  data.name = "";
-  data.job = "";
-  data.email = "";
-  data.phone = "";
-  data.linkedin = "";
-  data.github = "";
+  data.name = '';
+  data.job = '';
+  data.email = '';
+  data.phone = '';
+  data.linkedin = '';
+  data.github = '';
   data.palette = 1;
-  data.photo = "";
+  data.photo = '';
 
   for (const input of inputList) {
-    input.value = "";
+    input.value = '';
   }
 
   render();
 
   profileImageCard.style.backgroundImage = `url(${url})`;
   smallImage.style.backgroundImage = `url(${urlSmall})`;
-
-} 
+}
 
 buttonReset.addEventListener('click', reset);

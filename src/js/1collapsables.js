@@ -1,3 +1,5 @@
+'use strict';
+
 const designContainer = document.querySelector('.js-designContainer');
 const fillContainer = document.querySelector('.js-fillContainer');
 const shareContainer = document.querySelector('.js-shareContainer');
@@ -11,6 +13,7 @@ function hideDesign() {
   designContainer.classList.toggle('margins');
   designCollapsable.classList.toggle('rotate');
 }
+
 designCollapsable.addEventListener('click', hideDesign);
 
 function hideFill() {
@@ -18,6 +21,7 @@ function hideFill() {
   fillContainer.classList.toggle('margins');
   fillCollapsable.classList.toggle('rotate');
 }
+
 fillCollapsable.addEventListener('click', hideFill);
 
 function hideShare() {
@@ -25,4 +29,5 @@ function hideShare() {
   shareContainer.classList.toggle('margins');
   shareCollapsable.classList.toggle('rotate');
 }
+
 shareCollapsable.addEventListener('click', hideShare);

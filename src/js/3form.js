@@ -1,50 +1,43 @@
-/* eslint-disable strict */
+'use strict';
 
-const inputList = document.querySelectorAll (".js-input");
+const inputList = document.querySelectorAll('.js-input');
 
 const data = {
-  name: "",
-  job: "",
-  email: "",
-  phone: "",
-  linkedin: "",
-  github: "",
+  name: '',
+  job: '',
+  email: '',
+  phone: '',
+  linkedin: '',
+  github: '',
   palette: 1,
-  photo: "",
+  photo: '',
 };
-console.log (data);
 
-const saveField = function (event){
+const saveField = function (event) {
   data[event.currentTarget.name] = event.currentTarget.value;
-  data.photo = fr.result.name;
-  console.log (data.photo);
-  console.log (data);
   render();
 };
 
 for (const input of inputList) {
-  input.addEventListener ("keyup", saveField);
+  input.addEventListener('keyup', saveField);
 }
 
-const render = function (){
-  document.querySelector('.js-cardName').innerHTML = data.name || "Lisa Simpson";
-
-  document.querySelector('.js-cardPosition').innerHTML = data.job || "Saxophonist";
-
-  document.querySelector('.js-cardEmail').href = "mailto:" + data.email;
-
-  document.querySelector('.js-cardPhone').href = "tel:" + data.phone;
-
-  document.querySelector('.js-cardLinkedin').href = "https://www.linkedin.com/in/" + data.linkedin;
-
-  document.querySelector('.js-cardGithub').href = "https://www.github.com/" + data.github;
-
+const render = function () {
+  document.querySelector('.js-cardName').innerHTML =
+    data.name || 'Lisa Simpson';
+  document.querySelector('.js-cardPosition').innerHTML =
+    data.job || 'Saxophonist';
+  document.querySelector('.js-cardEmail').href = 'mailto:' + data.email;
+  document.querySelector('.js-cardPhone').href = 'tel:' + data.phone;
+  document.querySelector('.js-cardLinkedin').href =
+    'https://www.linkedin.com/in/' + data.linkedin;
+  document.querySelector('.js-cardGithub').href =
+    'https://www.github.com/' + data.github;
 };
-
 
 const buttonShare = document.querySelector('.js-button--create');
 const twitterContainer = document.querySelector('.js-twitterContainer');
-const shareTwitter = document.querySelector('.js-section__link--share'); 
+const shareTwitter = document.querySelector('.js-section__link--share');
 
 function hideTwitter() {
   twitterContainer.classList.remove('hidden');
